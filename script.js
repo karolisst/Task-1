@@ -26,7 +26,5 @@ calcForm.addEventListener("submit", (event) => {
   } else if (number === "") {
     output.innerHTML = `Nieko neįvedėte, prašome įvesti skaičių.`;
   } else
-    output.innerHTML = `<p><strong>Rezultatai:</strong></p><br><p>${number} kg = ${svarai} lb</p><p>${number} kg = ${gramai} g</p><p>${number} kg = ${uncijos} oz</p>`;
-  document.getElementById("output").style.cssText =
-    "  max-width: 80%; margin: 50px auto; text-align: center; font-size: 2.1em; padding: 20px;";
+    output.innerHTML = `<p><strong>REZULTATAI:</strong></p><br>${number} kg = ${svarai} lb <br> ${number} kg = ${gramai} g <br> ${number} kg = ${uncijos} oz`;
 });
